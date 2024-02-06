@@ -1,9 +1,9 @@
-# Your Project's Title...
+# My Website
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--my-website--v-ishnuvarthan.hlx.page/
+- Live: https://main--my-website--v-ishnuvarthan.hlx.live/
 
 ## Installation
 
