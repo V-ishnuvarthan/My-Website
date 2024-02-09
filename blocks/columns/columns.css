@@ -10,7 +10,20 @@
 .columns > div > div {
   order: 1;
 }
-
+.columns > div > h1 {
+  background-color: #92e3a9;
+  font-size: 4rem;
+  font-weight: 500;
+  color: inherit;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  padding: 1rem;
+}
 .columns > div > .columns-img-col {
   order: 0;
 }
