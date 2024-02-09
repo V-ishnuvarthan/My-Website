@@ -61,14 +61,13 @@
 }
 
 body {
-  font-size: var(--body-font-size-m);
-  margin: 0;
-  font-family: var(--body-font-family);
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
   display: none;
   background-color: #bdf3d3;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #2e2836;
+  line-height: 1.75;
 }
 
 body.appear {
@@ -97,7 +96,11 @@ h1 {
   font-size: var(--heading-font-size-xxl);
 }
 h2 {
-  font-size: var(--heading-font-size-xl);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 h3 {
   font-size: var(--heading-font-size-l);
