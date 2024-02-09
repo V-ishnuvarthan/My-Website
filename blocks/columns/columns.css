@@ -10,7 +10,7 @@
 .columns > div > div {
   order: 1;
 }
-.columns > div > ul > li {
+.columns > div > div > ul > li {
   background-color: #92e3a9;
   font-size: 4rem;
   font-weight: 500;
