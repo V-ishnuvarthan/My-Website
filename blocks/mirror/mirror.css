@@ -24,7 +24,7 @@
   margin-top: 1.5rem;
 }
 
-.bg-circle {
+.mirror > div > div > ul > li {
   background-color: #92e3a9;
   font-size: 4rem;
   font-weight: 500;
