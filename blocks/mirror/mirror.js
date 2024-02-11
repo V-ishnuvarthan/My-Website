@@ -1,6 +1,4 @@
 export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
-  block.classList.add(`columns-${cols.length}-cols`);
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
       const pic = col.querySelector('picture');
@@ -9,15 +7,7 @@ export default function decorate(block) {
         const picWrapper = pic.closest('div');
         if (picWrapper && picWrapper.children.length === 1) {
           // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
-      const list = col.querySelector('list');
-      console.log(list);
-      if (list) {
-        const listWrapper = list.closest('div');
-        if (listWrapper && listWrapper.children.length === 1) {
-          listWrapper.classList.add('bg-circle');
+          picWrapper.classList.add('mirror-img');
         }
       }
     });

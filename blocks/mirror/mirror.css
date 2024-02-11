@@ -1,0 +1,48 @@
+.mirror-wrapper {
+  background-color: #d7f8e5;
+}
+
+.mirror {
+  padding: 2rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.mirror > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.mirror > div > div > h3 {
+  font-size: 1.9rem;
+}
+
+.mirror > div > div > p {
+  margin-top: 1.5rem;
+}
+
+.bg-circle {
+  background-color: #92e3a9;
+  font-size: 4rem;
+  font-weight: 500;
+  color: inherit;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+.mirror > div > div > picture {
+  width: 100%;
+}
+
+.mirror-img {
+  width: 50rem;
+}
