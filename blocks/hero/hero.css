@@ -6,6 +6,9 @@
 .hero img {
   width: 100%;
 }
+.hero-wrapper {
+  padding: 64px 32px;
+}
 
 .hero > div > div {
   order: 1;
