@@ -3,17 +3,17 @@
 }
 
 .mirror {
-  padding: 2rem 4.5rem;
+  padding: 1rem 2.25rem;
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 1.5rem;
 }
 
 .mirror > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5rem;
+  column-gap: 2.5rem;
 }
 
 .mirror > div > div > h3 {
@@ -26,14 +26,14 @@
 
 .mirror > div > div > ul > li {
   background-color: #92e3a9;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 500;
   color: inherit;
-  width: 8rem;
+  width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: 4rem;
   border-radius: 50%;
   flex-shrink: 0;
   padding: 1rem;
@@ -44,5 +44,5 @@
 }
 
 .mirror-img {
-  width: 50rem;
+  width: 25rem;
 }
