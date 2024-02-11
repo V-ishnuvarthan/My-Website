@@ -13,7 +13,7 @@ export default function decorate(block) {
     col2Div.append(...col2.children);
 
     const stepWrapper = document.createElement('div');
-    stepWrapper.classList.add(`step-${i} step-container`);
+    stepWrapper.classList.add(`step-${i}`, 'step-container');
     stepWrapper.append(col1, col2);
   });
 }
