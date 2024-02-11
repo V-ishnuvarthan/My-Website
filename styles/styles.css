@@ -22,7 +22,7 @@
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono",
+  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono',
     monospace;
 
   /* body sizes */
@@ -46,7 +46,7 @@
   font-family: roboto-fallback;
   size-adjust: 100.06%;
   ascent-override: 95%;
-  src: local("Arial");
+  src: local('Arial');
 }
 
 @media (width >= 900px) {
@@ -62,12 +62,12 @@
 
 body {
   background-color: #bdf3d3;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.35rem;
   color: #2e2836;
   line-height: 1.75;
-  margin-top: 0px;
+  margin: 0px;
   display: none;
 }
 
@@ -217,7 +217,7 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 0px;
 }
 
 @media (width >= 600px) {
@@ -228,7 +228,7 @@ main .section {
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
   }
 }
