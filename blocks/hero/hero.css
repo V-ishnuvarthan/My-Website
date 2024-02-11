@@ -17,6 +17,8 @@
 
 .hero > div > .hero-img-col img {
   display: block;
+  border-radius: 20px;
+  background-color: black;
 }
 
 @media (width >= 900px) {
