@@ -11,13 +11,13 @@
 
 .mirror > div {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   column-gap: 2.5rem;
 }
 
-.mirror > div > div > h3 {
-  font-size: 1.9rem;
+.mirror > div > div > h4 {
+  font-size: 1.5rem;
 }
 
 .mirror > div > div > p {
