@@ -20,10 +20,10 @@ const h2Element = document.querySelector('h2');
 const mirrorDiv = document.querySelector('.mirror');
 
 // Select the parent element of the <h2> element
-const parentOfH2 = h2Element.parentElement;
+//const parentOfH2 = querySelector('.mirror >');
 
 // Append the <h2> element as a child of the <div> element
 mirrorDiv.appendChild(h2Element);
 
 // Remove the <h2> element from its original parent
-parentOfH2.remove();
+//parentOfH2.remove('');
