@@ -110,7 +110,7 @@ export default async function decorate(block) {
     }
   });
   div.append(form);
-  block.replaceChildren(form);
+  block.replaceChildren(div);
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
