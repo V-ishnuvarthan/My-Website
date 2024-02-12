@@ -1,3 +1,76 @@
+.form-wrapper {
+  padding: 10rem;
+  background-color: #bdf3d3;
+}
+
+.form {
+  padding: 3rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(146, 227, 169, 0.4),
+      rgb(88, 136, 101, 0.4)
+    ),
+    url('./icons/sun-tornado.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 25px;
+  width: 70%;
+
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.form > div {
+  display: grid;
+  padding: 2rem;
+  gap: 1rem;
+
+  max-width: 80rem;
+}
+
+.cta-description {
+  margin-bottom: 2rem;
+}
+
+/* FORMS  */
+
+.form > div > form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.select-wrapper {
+  display: block;
+  background: #bcdcba;
+
+  padding: 1rem;
+  border: none;
+
+  border-radius: 10px;
+
+  min-width: 10rem;
+}
+
+.submit-wrapper {
+  display: block;
+  border: none;
+  width: 50%;
+  background-color: #304a2f;
+  color: #faf9f6;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+
+.submit-wrapper:hover,
+.submit-wrapper:active {
+  background-color: #d7f8e5;
+  color: #2e2836;
+}
+
 .form .field-wrapper {
   display: grid;
   grid-auto-flow: row;
@@ -83,7 +156,7 @@
 }
 
 .form input[required] + label::after {
-  content: "*";
+  content: '*';
   color: firebrick;
   margin-inline-start: 1ch;
 }
@@ -115,7 +188,7 @@
 
 .form .toggle-wrapper .slider::before {
   position: absolute;
-  content: "";
+  content: '';
   height: 20px;
   width: 20px;
   left: 2px;
