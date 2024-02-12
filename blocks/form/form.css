@@ -54,23 +54,6 @@
   min-width: 10rem;
 }
 
-.submit-wrapper {
-  display: block;
-  border: none;
-  width: 50%;
-  background-color: #304a2f;
-  color: #faf9f6;
-  cursor: pointer;
-  transition: all 0.2s;
-  border-radius: 10px;
-}
-
-.submit-wrapper:hover,
-.submit-wrapper:active {
-  background-color: #d7f8e5;
-  color: #2e2836;
-}
-
 .form .field-wrapper {
   display: grid;
   grid-auto-flow: row;
