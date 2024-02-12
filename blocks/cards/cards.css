@@ -15,6 +15,9 @@
   box-shadow: var(--shadow-elevation-medium);
 }
 
+.cards > ul > li > div > h4 {
+  font-size: var(--heading-font-size-s);
+}
 .cards .cards-card-body {
   margin: 16px;
 }
