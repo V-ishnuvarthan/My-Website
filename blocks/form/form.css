@@ -10,7 +10,7 @@
       rgb(146, 227, 169, 0.4),
       rgb(88, 136, 101, 0.4)
     ),
-    url('./icons/sun-tornado.svg');
+    url('C:\Users\2145560\Downloads\Franklin\My Workspace\My-Website\icons\sun-tornado.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -41,7 +41,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-
+#form-name-label,
+#form-email-label {
+  display: none;
+}
 #form,
 #form-name,
 #form-email {
