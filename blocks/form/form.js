@@ -10,7 +10,9 @@ async function createForm(formHref) {
   // eslint-disable-next-line prefer-destructuring
   form.dataset.action = pathname.split('.json')[0];
 
-  const fields = await Promise.all(json.data.map((fd) => createField(fd, form)));
+  const fields = await Promise.all(
+    json.data.map((fd) => createField(fd, form))
+  );
   fields.forEach((field) => {
     if (field) {
       form.append(field);
@@ -20,9 +22,11 @@ async function createForm(formHref) {
   // group fields into fieldsets
   const fieldsets = form.querySelectorAll('fieldset');
   fieldsets.forEach((fieldset) => {
-    form.querySelectorAll(`[data-fieldset="${fieldset.name}"`).forEach((field) => {
-      fieldset.append(field);
-    });
+    form
+      .querySelectorAll(`[data-fieldset="${fieldset.name}"`)
+      .forEach((field) => {
+        fieldset.append(field);
+      });
   });
 
   return form;
@@ -36,7 +40,10 @@ function generatePayload(form) {
       if (field.type === 'radio') {
         if (field.checked) payload[field.name] = field.value;
       } else if (field.type === 'checkbox') {
-        if (field.checked) payload[field.name] = payload[field.name] ? `${payload[field.name]},${field.value}` : field.value;
+        if (field.checked)
+          payload[field.name] = payload[field.name]
+            ? `${payload[field.name]},${field.value}`
+            : field.value;
       } else {
         payload[field.name] = field.value;
       }
@@ -49,7 +56,10 @@ function handleSubmitError(form, error) {
   // eslint-disable-next-line no-console
   console.error(error);
   form.querySelector('button[type="submit"]').disabled = false;
-  sampleRUM('form:error', { source: '.form', target: error.stack || error.message || 'unknown error' });
+  sampleRUM('form:error', {
+    source: '.form',
+    target: error.stack || error.message || 'unknown error',
+  });
 }
 
 async function handleSubmit(form) {
@@ -70,7 +80,10 @@ async function handleSubmit(form) {
       },
     });
     if (response.ok) {
-      sampleRUM('form:submit', { source: '.form', target: form.dataset.action });
+      sampleRUM('form:submit', {
+        source: '.form',
+        target: form.dataset.action,
+      });
       if (form.dataset.confirmation) {
         window.location.href = form.dataset.confirmation;
       }
@@ -90,7 +103,7 @@ export default async function decorate(block) {
   if (!formLink) return;
 
   const form = await createForm(formLink.href);
-  block.replaceChildren(form);
+  block.append(form);
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
