@@ -31,22 +31,21 @@
 
 .show-more {
   font-family: var(--body-font-family);
-  display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
+  display: block;
+  margin: 16px 0;
+  padding: 10px 20px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
+  color: black;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
+  transition: backgroud-color 0.3s ease;
+}
+
+.show-more {
+  background-color: #0056b3;
 }
 .hide {
   display: none;
