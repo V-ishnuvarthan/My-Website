@@ -14,7 +14,7 @@ export default function decorate(block) {
     ul.append(li);
   });
   const pic = ul.querySelectorAll('img');
-  if (pic) {
+  if (pic.closest('picture')) {
     pic.forEach((img) =>
       img
         .closest('picture')
