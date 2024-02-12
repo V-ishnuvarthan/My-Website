@@ -275,6 +275,6 @@ main .section.highlight {
   /* background-color: var(--light-color); */
 }
 
-.section > div > h3 {
+.section > div > h2 {
   padding: 1rem 2.25rem;
 }
