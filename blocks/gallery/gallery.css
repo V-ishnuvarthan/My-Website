@@ -1,10 +1,14 @@
-#images-of-our-adorable-pets {
+#portraits-of-our-adorable-pets {
   background-color: #d7f8e5;
+  margin-block-end: 0px;
 }
 
 .gallery {
   background-color: #d7f8e5;
   display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 35px 25px 35px 25px;
 }
 .gallery > div {
   overflow: hidden;

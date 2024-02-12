@@ -16,7 +16,8 @@
 }
 
 .cards > ul > li > div > h4 {
-  font-size: var(--heading-font-size-s);
+  font-size: 1.5rem;
+  height: 60px;
 }
 .cards .cards-card-body {
   margin: 16px;
