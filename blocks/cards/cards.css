@@ -9,7 +9,7 @@
 
 .cards > ul > li {
   border: 1px solid var(--dark-color);
-  background-color: var(--background-color);
+  background-color: #d7f8e5;
   border-radius: 30px;
   text-align: center;
   box-shadow: var(--shadow-elevation-medium);
