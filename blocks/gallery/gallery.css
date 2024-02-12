@@ -29,7 +29,7 @@
   transform: scale(1.1);
 }
 
-.button {
+.show-more {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
