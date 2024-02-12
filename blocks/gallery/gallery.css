@@ -49,12 +49,11 @@
   border-radius: 30px;
 }
 
-a.show-more :hover,
-a.show-more:focus,
 show-more :hover,
 show-more :focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hide {
