@@ -54,6 +54,7 @@ show-more :focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 
 .hide {
