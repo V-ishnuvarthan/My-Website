@@ -42,7 +42,9 @@
   gap: 2rem;
 }
 
-#form {
+#form,
+#form-name,
+#form-email {
   display: block;
   background: #bcdcba;
 
