@@ -1,11 +1,12 @@
 #images-of-our-adorable-pets {
   background-color: #d7f8e5;
 }
-.gallery > div {
+
+.gallery {
+  background-color: #d7f8e5;
   display: flex;
 }
-
-.gallery > div > div {
+.gallery > div {
   overflow: hidden;
   border-radius: 25px;
 }
