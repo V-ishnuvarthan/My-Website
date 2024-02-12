@@ -10,7 +10,7 @@
       rgb(146, 227, 169, 0.4),
       rgb(88, 136, 101, 0.4)
     ),
-    url('C:\Users\2145560\Downloads\Franklin\My Workspace\My-Website\icons\sun-tornado.svg');
+    url('sun-tornado.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,8 +62,7 @@
 .form .field-wrapper {
   display: grid;
   grid-auto-flow: row;
-  align-items: center;
-  padding: 8px;
+  padding: 0px;
 }
 
 .form fieldset {
