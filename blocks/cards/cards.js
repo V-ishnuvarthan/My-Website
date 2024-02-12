@@ -13,8 +13,8 @@ export default function decorate(block) {
     });
     ul.append(li);
   });
-  const pic = ul.querySelectorAll('img');
-  if (pic.closest('picture')) {
+  const pic = ul.querySelectorAll('picture');
+  if (pic) {
     pic.forEach((img) =>
       img
         .closest('picture')
