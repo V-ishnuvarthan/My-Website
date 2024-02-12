@@ -26,4 +26,4 @@ const parentOfH2 = h2Element.parentElement;
 mirrorDiv.appendChild(h2Element);
 
 // Remove the <h2> element from its original parent
-parentOfH2.removeChild(h2Element);
+parentOfH2.remove();
