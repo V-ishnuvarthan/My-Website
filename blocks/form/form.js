@@ -102,9 +102,11 @@ export default async function decorate(block) {
   const formLink = block.querySelector('a[href$=".json"]');
   if (!formLink) return;
 
-  const button = document.querySelector('.button-container');
+  const button = document.querySelector(
+    '.body > main > div.section.highlight.hero-container.mirror-container.cards-container.gallery-container.form-container > div.form-wrapper > div > div:nth-child(2)'
+  );
   const form = await createForm(formLink.href);
-  button.replaceWith(form);
+  button.replaceChildren(form);
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
