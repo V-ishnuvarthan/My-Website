@@ -1,3 +1,22 @@
 #images-of-our-adorable-pets {
   background-color: #d7f8e5;
 }
+.gallery > div {
+  display: flex;
+}
+
+.gallery > div > div {
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.gallery > div > div > picture {
+  width: 100%;
+  display: block;
+  border-radius: 25px;
+  transition: all 0.4s;
+}
+
+.gallery > div > div > picture:hover {
+  transform: scale(1.1);
+}
