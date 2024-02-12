@@ -26,3 +26,17 @@ export default function decorate(block) {
     block.append(ul);
   }
 }
+
+const h2Element = document.querySelector('h2');
+
+// Select the <div> element with class "mirror"
+const mirrorDiv = document.querySelector('.cards');
+
+// Select the parent element of the <h2> element
+const parentOfH2 = h2Element.parentElement;
+
+// Append the <h2> element as a child of the <div> element
+mirrorDiv.appendChild(h2Element);
+
+// Remove the <h2> element from its original parent
+parentOfH2.removeChild(h2Element);
