@@ -205,7 +205,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
-  background-color: var(--link-color);
+  background-color: black;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;

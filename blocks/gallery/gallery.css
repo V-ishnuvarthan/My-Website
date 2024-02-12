@@ -31,22 +31,32 @@
 
 .show-more {
   font-family: var(--body-font-family);
-  display: block;
-  margin: 16px 0;
-  padding: 10px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px 30px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
-  color: black;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: backgroud-color 0.3s ease;
+  color: var(--background-color);
+  background-color: black;
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 30px;
 }
 
-.show-more {
-  background-color: #0056b3;
+a.show-more :hover,
+a.show-more:focus,
+show-more :hover,
+show-more :focus {
+  background-color: var(--link-hover-color);
+  cursor: pointer;
 }
+
 .hide {
   display: none;
 }
