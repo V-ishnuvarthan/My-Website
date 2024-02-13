@@ -37,7 +37,10 @@
   object-fit: cover;
 }
 
-.icon {
+.icon-donate,
+.icon-foster,
+.icon-volunteer,
+.icon-bullhorn {
   display: inline-block;
   height: 44px;
   width: 44px;
