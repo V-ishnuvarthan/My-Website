@@ -19,6 +19,3 @@ export default function decorate(block) {
     showMore.style.display = 'none';
   });
 }
-
-const galleryWrapper = document.querySelector('.gallery-wrapper');
-galleryWrapper.setAttribute('id', 'gallery');
