@@ -126,3 +126,5 @@ export default async function decorate(block) {
     }
   });
 }
+const formWrapper = document.querySelector('.form-wrapper');
+formWrapper.setAttribute('id', 'contact');
